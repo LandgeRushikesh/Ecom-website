@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+.main-padding{
+    padding: 0px 44px;
+}
+/* Nav section */
+.web-page{
+    width: 96%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.upper-sec{
+    background-color: black;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.upper-sec .btn{
+    background: none;
+    border: none;
+    color: rgba(52, 52, 248, 0.803);
+}
+.upper-sec .left *{
+    margin: 0px 4px;
+    font-size: 20px;
+}
+.nav-bar{
+    background-color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-bar ul li{
+    margin: 0px 12px;
+    list-style: none;
+    font-size: 16px;
+}
+.nav-bar ul li .cart{
+    background-color: black;
+    padding: 8px 24px;
+    color:white;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+}
+main{
+    background-color: white;
+}
+.hero-section{
+    background-image: linear-gradient(to top right,#3d86fa,#4484fb,#679eff,#b3d2ff,#ebf3fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section .left{
+    width: 50%;
+    color: rgba(22, 22, 129, 0.8);
+}
+.hero-section .left *{
+    margin: 10px 0px;
+}
+.hero-section .left h1{
+    font-size: 50px;
+}
+.hero-section .left h3{
+    font-size: 24px;
+}
+.hero-section .left p{
+    font-size: 20px;
+    color: white;
+}
+.hero-section .left .explore{
+    padding: 10px 24px;
+    background-color: black;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.hero-section .left .explore a{
+    text-decoration: none;
+    color: white;
+}
+.hero-section .right{
+    width: 50%;
+}
+.hero-section .right img{
+    width: 100%;
+}
