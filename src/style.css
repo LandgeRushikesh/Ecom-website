@@ -7,6 +7,10 @@
 .main-padding{
     padding: 0px 44px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 /* Nav section */
 .web-page{
     width: 96%;
@@ -39,6 +43,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.nav-bar .left img{
+    width: 75px;
+}
 .nav-bar ul{
     display: flex;
     justify-content: center;
@@ -49,6 +56,7 @@
     margin: 0px 12px;
     list-style: none;
     font-size: 16px;
+    font-weight: bold;
 }
 .nav-bar ul li .cart{
     background-color: black;
@@ -58,9 +66,25 @@
     border-radius: 4px;
     font-size: 16px;
 }
+.nav-bar ul li a::after{
+    content: '';
+    width:0px;
+    height: 3px;
+    background-color:blue;
+    display: block;
+    transition: all 0.5s;
+}
+.nav-bar ul li a:hover{
+    cursor: pointer;
+    color: blue;
+}
+.nav-bar ul li a:hover::after{
+    width: 100%;
+}
 main{
     background-color: white;
 }
+/* Hero section */
 .hero-section{
     background-image: linear-gradient(to top right,#3d86fa,#4484fb,#679eff,#b3d2ff,#ebf3fe);
     display: flex;
@@ -101,4 +125,58 @@ main{
 }
 .hero-section .right img{
     width: 100%;
+}
+/* Hero section footer */
+.hero-sec-footer {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.hero-sec-footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.hero-sec-footer .container .left{
+    width: 60%;
+}
+.hero-sec-footer .container .left *{
+    margin: 4px 0px;
+}
+.hero-sec-footer .container .left p{
+    font-size: 16px;
+    color: blue;
+}
+.hero-sec-footer .container .left a{
+    font-size: 16px;
+    color: black;
+}
+.hero-sec-footer .container .right{
+    width: 40%;
+}
+.hero-sec-footer .container .right img{
+    width: 100%;
+}
+/* Hero section footer -2 */
+.hero-sec-footer-2 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.hero-sec-footer-2 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.hero-sec-footer-2 .container *{
+    margin: 0px 4px;
+}
+.hero-sec-footer-2 .container .left{
+    font-size: 30px;
+    color: blue;
 }
