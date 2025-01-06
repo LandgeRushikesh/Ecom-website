@@ -44,7 +44,7 @@ a{
     align-items: center;
 }
 .nav-bar .left img{
-    width: 75px;
+    width: 60px;
 }
 .nav-bar ul{
     display: flex;
@@ -179,4 +179,50 @@ main{
 .hero-sec-footer-2 .container .left{
     font-size: 30px;
     color: blue;
+}
+/* About section */
+.about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: rgb(60, 57, 57);
+}
+.about h1,h2{
+    color: black;
+}
+.about .about-points{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 24px 0px;
+}
+.about .about-points *{
+    padding: 0px 10px;
+}
+.about .about-points .left{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.about .about-points .right{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.about .about-points .mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .about-points .mid img{
+    width: 90%;
+}
+.about .about-points .para{
+    margin: 20px 0px;
+}
+.about .about-points .para *{
+    margin: 8px;
+}
+.about .about-points .para .srNo{
+    display: inline;
+    background-color: rgb(188, 255, 255);
+    padding: 10px 20px;
+    border-radius: 50%;
 }
