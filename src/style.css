@@ -11,6 +11,9 @@ a{
     text-decoration: none;
     color: black;
 }
+body{
+    background-color: #f7f7f7;
+}
 /* Nav section */
 .web-page{
     width: 96%;
@@ -80,9 +83,6 @@ a{
 }
 .nav-bar ul li a:hover::after{
     width: 100%;
-}
-main{
-    background-color: white;
 }
 /* Hero section */
 .hero-section{
@@ -167,10 +167,11 @@ main{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding: 40px 0px;
 }
 .hero-sec-footer-2 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 } 
 .hero-sec-footer-2 .container *{
