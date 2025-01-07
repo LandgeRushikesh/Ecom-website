@@ -1,4 +1,6 @@
 import './style.css'
+import products from "./productList.json"
+import { addProduct } from './product';
 
 let paras = document.querySelectorAll(".para")
 
@@ -23,3 +25,7 @@ document.addEventListener("scroll", () => {
         }
     }
 });
+
+// adding data to the product section
+
+addProduct(products)
