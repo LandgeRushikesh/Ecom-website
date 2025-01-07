@@ -12,7 +12,7 @@ a{
     color: black;
 }
 body{
-    background-color: #f7f7f7;
+    background-color: #f3f2f2;
 }
 /* Nav section */
 .web-page{
@@ -226,4 +226,14 @@ body{
     background-color: rgb(188, 255, 255);
     padding: 10px 20px;
     border-radius: 50%;
+}
+/* Sroll effect */
+.para {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 1s ease-in-out;
+}
+.visible{
+    opacity: 1;
+    transform: translateY(0px);
 }
