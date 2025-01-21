@@ -29,3 +29,4 @@ document.addEventListener("scroll", () => {
 // adding data to the product section
 
 addProduct(products)
+
