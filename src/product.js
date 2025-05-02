@@ -1,4 +1,5 @@
 import { quantityToggel } from "./quantity";
+import { addToCart } from "./addToCart";
 
 export let addProduct = (productList) => {
   if (!productList) {
@@ -47,14 +48,20 @@ export let addProduct = (productList) => {
 
     document.querySelectorAll(".btns").forEach(btn => btn.addEventListener("click", (e) => {
       let cardID = btn.parentElement.parentElement.id
-      let cnt = document.querySelector(`#${cardID} .quantity .btns .count`); 
-      // parseInt(cnt.textContent)
+      let cnt = document.querySelector(`#${cardID} .quantity .btns .count`);
       let quantity = document.querySelector(`#${cardID} .stocks .stock`).textContent
 
-      
-      count = quantityToggel(e,Number(cnt.textContent),quantity)
+      count = quantityToggel(e, Number(cnt.textContent), quantity)
       cnt.innerText = count
+
     })
     )
+    // add to cart functionality
+    document.querySelectorAll('.add-to-cart').forEach((btn)=>btn.addEventListener("click", (e) => {
+      let cardID = btn.parentElement.id
+      let price = document.querySelector(`#${cardID} .price .original-price`).textContent
+      console.log(price)
+      addToCart(cardID,e)
+    }))
   });
 }

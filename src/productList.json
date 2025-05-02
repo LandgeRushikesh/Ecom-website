@@ -98,5 +98,26 @@
     "totalStock": 50,
     "discountedPrice": 2499,
     "originalPrice": 2999
+  },
+  {
+    "id": 11,
+    "category": "Furniture",
+    "imageLink": "/chair.png",
+    "heading": "Office Chair",
+    "description": "Ergonomic office chair with adjustable height and lumbar support.",
+    "totalStock": 45,
+    "discountedPrice": 7999,
+    "originalPrice": 9999
+  },
+  {
+    "id": 12,
+    "category": "Beauty",
+    "imageLink": "/hairdryer.png",
+    "heading": "Hair Dryer",
+    "description": "A lightweight hair dryer with multiple heat and speed settings.",
+    "totalStock": 70,
+    "discountedPrice": 1499,
+    "originalPrice": 1999
   }
+  
 ]
