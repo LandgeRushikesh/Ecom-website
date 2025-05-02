@@ -1,3 +1,5 @@
+// this file i am using to add products on web page
+
 import { quantityToggel } from "./quantity";
 import { addToCart } from "./addToCart";
 
@@ -44,8 +46,8 @@ export let addProduct = (productList) => {
               </div>
               <button class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
             </div>`
-    // for quantity increment and decrement
 
+    // for quantity increment and decrement
     document.querySelectorAll(".btns").forEach(btn => btn.addEventListener("click", (e) => {
       let cardID = btn.parentElement.parentElement.id
       let cnt = document.querySelector(`#${cardID} .quantity .btns .count`);
@@ -59,8 +61,6 @@ export let addProduct = (productList) => {
     // add to cart functionality
     document.querySelectorAll('.add-to-cart').forEach((btn)=>btn.addEventListener("click", (e) => {
       let cardID = btn.parentElement.id
-      let price = document.querySelector(`#${cardID} .price .original-price`).textContent
-      console.log(price)
       addToCart(cardID,e)
     }))
   });
