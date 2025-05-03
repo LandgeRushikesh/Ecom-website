@@ -61,7 +61,7 @@ export let addProduct = (productList) => {
     // add to cart functionality
     document.querySelectorAll('.add-to-cart').forEach((btn)=>btn.addEventListener("click", (e) => {
       let cardID = btn.parentElement.id
-      addToCart(cardID,e)
+      addToCart(cardID)
     }))
   });
 }

@@ -1,6 +1,7 @@
 import './style.css'
 import products from "./productList.json"
 import { addProduct } from './product';
+import { UpdateCartValue } from './updateValueInCartIcon';
 
 let paras = document.querySelectorAll(".para")
 
@@ -29,3 +30,9 @@ document.addEventListener("scroll", () => {
 // adding data to the product section
 
 addProduct(products)
+
+// Adding functionality which will maintain Value in Nav Cart Icon 
+window.addEventListener("load",()=>{
+    let cartArray = JSON.parse(localStorage.getItem("CartProduct")) 
+    UpdateCartValue(cartArray)
+})
