@@ -40,3 +40,9 @@ window.addEventListener("load",()=>{
     let cartArray = JSON.parse(localStorage.getItem("CartProduct")) 
     UpdateCartValue(cartArray)
 })
+
+// Testing
+document.querySelector(".footer-section").querySelector(".about-sec").addEventListener("click",()=>{
+    console.log("Inside About html");
+    
+})

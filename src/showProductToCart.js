@@ -4,6 +4,7 @@ import { RemoveFromCart } from "./RemoveFromCart";
 import { UpdateCartValue } from "./updateValueInCartIcon";
 import { HandleProductSummary } from "./HandleProductSummary";
 import { handleQuantityInCart } from "./handleQuantityInCart";
+import { addingFooter } from "./footer";
 
 const showCartProducts = () => {
     let cartProducts = getProductLS()
