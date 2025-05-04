@@ -3,6 +3,7 @@ import products from "./productList.json"
 import { RemoveFromCart } from "./RemoveFromCart";
 import { UpdateCartValue } from "./updateValueInCartIcon";
 import { handelQuantityInCart } from "./handelQuantityInCart";
+import { HandelProductSummary } from "./HandelProductSummary";
 
 const showCartProducts = () => {
     let cartProducts = getProductLS()
@@ -33,6 +34,7 @@ const showCartProducts = () => {
                     <button class="Remove-from-cart">Remove</button>
                 </div>`
         }
+        HandelProductSummary()
     })
 
     // Handling remove cart functionality
