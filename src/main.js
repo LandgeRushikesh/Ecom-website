@@ -2,6 +2,7 @@ import './style.css'
 import products from "./productList.json"
 import { addProduct } from './product';
 import { UpdateCartValue } from './updateValueInCartIcon';
+import { addingFooter } from './footer';
 
 let paras = document.querySelectorAll(".para")
 
@@ -30,6 +31,9 @@ document.addEventListener("scroll", () => {
 // adding data to the product section
 
 addProduct(products)
+
+// adding footer
+addingFooter()
 
 // Adding functionality which will maintain Value in Nav Cart Icon 
 window.addEventListener("load",()=>{
