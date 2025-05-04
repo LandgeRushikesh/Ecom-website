@@ -1,5 +1,5 @@
 import { getProductLS } from "./getProductLS"
-import { HandelProductSummary } from "./HandelProductSummary"
+import { HandleProductSummary } from "./HandleProductSummary"
 import { UpdateCartValue } from "./updateValueInCartIcon"
 // To remove products from local storage filter method is used
 
@@ -10,6 +10,7 @@ export const RemoveFromCart = (id) => {
     localStorage.setItem("CartProduct",JSON.stringify(updatedCart))
     document.querySelector(".cart-products").querySelector(`#${id}`).remove()
 
-    HandelProductSummary()
+    HandleProductSummary()
+
     UpdateCartValue(updatedCart)
 }

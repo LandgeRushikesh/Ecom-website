@@ -1,6 +1,6 @@
 import { getProductLS } from "./getProductLS"
 
-export const HandelProductSummary = ()=>{
+export const HandleProductSummary = ()=>{
     let cartArray = getProductLS()
 
     let totalProductPrice = 0
