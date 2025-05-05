@@ -18,6 +18,17 @@
     />
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "E8pHUk_7ggh8qOQgT",
+        });
+      })();
+    </script>
     <title>Click Cart</title>
   </head>
   <body>
@@ -55,34 +66,35 @@
           </div>
         </section>
       </nav>
-      <section class="cart-products main-padding">
-        <!-- Products will be added dynamically -->
-      </section>
-      <section class="Amount-summary main-padding">
-        <div class="summary">
-          <h1>Selected Product Summary</h1>
-          <div class="sub-total">
-            <span>Sub Total:</span>
-            <span class="price">0</span>
+      <main>
+        <section class="contact main-padding">
+          <div class="contact-form">
+            <h1>Get in Touch With US</h1>
+            <form id="get-in-touch" action="">
+              <label for="Full Name">Full Name:</label>
+              <input type="text" id="full-name" placeholder="Enter Your Name..." />
+              <label for="Email">Email:</label>
+              <input type="email" id="email" placeholder="Enter Your Email..." />
+              <label for="Message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="6"
+                id="message"
+                placeholder="Enter Your Message..."
+              ></textarea>
+              <div class="btn">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
           </div>
-          <div class="Tax">
-            <span>Tax:</span>
-            <span>&#8377; 50</span>
-          </div>
-          <hr />
-          <div class="total">
-            <span>Total:</span>
-            <span class="total-price">&#8377; 50</span>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <section class="footer-section main-padding">
-          
         </section>
+      </main>
+      <footer>
+        <section class="footer-section main-padding"></section>
       </footer>
     </div>
     <script type="module" src="./main.js"></script>
-    <script type="module" src="./showProductToCart.js"></script>
+    <script type="module" src="./sendMail.js"></script>
   </body>
 </html>

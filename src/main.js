@@ -3,6 +3,7 @@ import products from "./productList.json"
 import { addProduct } from './product';
 import { UpdateCartValue } from './updateValueInCartIcon';
 import { addingFooter } from './footer';
+import { sendMail } from './sendMail';
 
 let paras = document.querySelectorAll(".para")
 
@@ -41,8 +42,8 @@ window.addEventListener("load",()=>{
     UpdateCartValue(cartArray)
 })
 
-// Testing
-document.querySelector(".footer-section").querySelector(".about-sec").addEventListener("click",()=>{
-    console.log("Inside About html");
-    
+// Contact form handling
+
+document.getElementById("get-in-touch").addEventListener("submit",(e)=>{
+    sendMail(e)
 })
