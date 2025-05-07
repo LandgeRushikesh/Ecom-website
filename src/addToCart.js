@@ -33,5 +33,6 @@ export const addToCart = (id) =>{
     
         UpdateCartValue(cartProduct)
     }
+    alert("Product has been added to cart!!!")
 }
 
